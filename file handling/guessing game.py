@@ -1,11 +1,9 @@
 import random
 gues=0
 count=0
-l=1
-u=20
-correct=random.randint(l,u)
+correct=random.randint(1,10)
 while count<5:
-    gues=int(input("enter the number: "))
+    gues=int(input("enter the number within the range 1-10: "))
     if gues>correct:
        print("too large")
     elif gues<correct:
